@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Vet Camargos | Clínica Veterinária e Emergência Pet</title>
+  <meta name="description" content="Center Vet Camargos - Clínica Veterinária completa para cães e gatos. Consultas, vacinas, exames laboratoriais, cirurgias, internação e atendimento personalizado. Aceitamos Plano de Saúde Petlove!">
+  <meta name="keywords" content="veterinária, clinica veterinaria camargos, petlove, vacinas pet, exames laboratoriais pet, cirurgias pet, internacao veterinaria, consultas pet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#051226',      /* Fundo ultra escuro estilo Instagram */
+              navy: '#081B38',      /* Azul Royal Marinho base */
+              card: '#0D274D',      /* Card azul navy profundo */
+              cardBorder: '#163B6E',/* Bordas dos cards */
+              gold: '#F59E0B',      /* Amarelo/Dourado oficial */
+              goldHover: '#D97706',
+              goldLight: '#FEF3C7',
+              goldBright: '#FBBF24',
+              whatsapp: '#25D366',
+              whatsappHover: '#1EBE5D'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow-gold': '0 0 30px -5px rgba(245, 158, 11, 0.4)',
+            'glow-green': '0 0 30px -5px rgba(37, 211, 102, 0.5)',
+            'glow-blue': '0 0 40px -10px rgba(13, 39, 77, 0.8)',
+            'card-hover': '0 20px 35px -10px rgba(0, 0, 0, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #071936;
+      color: #F8FAFC;
+    }
+    
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    .pulse-whatsapp {
+      animation: pulse-ring 2s infinite;
+    }
+
+    /* Padrão sutil de pegadinhas de fundo estilo feed oficial */
+    .bg-paw-pattern {
+      background-image: radial-gradient(#1e3a8a 0.75px, transparent 0.75px), radial-gradient(#1e3a8a 0.75px, #071936 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      opacity: 0.25;
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-gold selection:text-brand-dark min-h-screen">
+
+  <!-- ==========================================
+       HEADER MINIMALISTA (ESTILO AZUL INSTAGRAM)
+       ========================================== -->
+  <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-cardBorder/60 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO & BRANDING ESTILO INSTAGRAM -->
+      <a href="#" class="flex items-center gap-3.5 group focus:outline-none">
+        <div class="relative w-12 h-12 rounded-full bg-gradient-to-br from-brand-navy via-brand-card to-brand-dark border-2 border-brand-gold p-0.5 shadow-glow-gold flex items-center justify-center text-brand-gold group-hover:scale-105 transition-transform duration-300">
+          <i class="fa-solid fa-paw text-xl"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl sm:text-2xl font-black text-white tracking-tight leading-none group-hover:text-brand-gold transition-colors">
+            CENTER VET
+          </span>
+          <span class="text-[10px] sm:text-xs font-extrabold tracking-widest text-brand-gold uppercase mt-1">
+            CAMARGOS • CLÍNICA VETERINÁRIA
+          </span>
+        </div>
+      </a>
+
+      <!-- ACTION BUTTON HEADER -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/553190911515" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-gradient-to-r from-brand-whatsapp to-brand-whatsappHover text-white font-black text-xs sm:text-sm px-4 sm:px-6 py-2.5 sm:py-3 rounded-full shadow-glow-green hover:shadow-xl hover:brightness-110 active:scale-95 transition-all duration-200 uppercase tracking-wide">
+          <i class="fa-brands fa-whatsapp text-lg animate-bounce"></i>
+          <span>EMERGÊNCIA WHATSAPP</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="relative">
+    
+    <!-- Background Overlay Decorativo -->
+    <div class="absolute inset-0 bg-paw-pattern pointer-events-none"></div>
+
+    <!-- ==========================================
+         SEÇÃO 1: HERO SECTION
+         ========================================== -->
+    <section class="relative pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden border-b border-brand-cardBorder/50">
+      
+      <!-- Blue Glow Orbs -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute -top-20 right-0 w-96 h-96 bg-brand-gold/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- LEFT COLUMN: CONTENT -->
+          <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+            
+            <!-- BADGE DE DESTAQUE -->
+            <div class="inline-flex items-center gap-2.5 bg-brand-card/90 border border-brand-gold/40 rounded-full px-4 py-2 text-xs sm:text-sm font-bold text-slate-100 shadow-lg backdrop-blur-sm">
+              <span class="flex h-2.5 w-2.5 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              </span>
+              <span>🏥 Clínica Veterinária Completa • Aceitamos Plano Petlove</span>
+            </div>
+
+            <!-- TÍTULO PRINCIPAL -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-white tracking-tight leading-[1.12]">
+              O Cuidado que seu Pet Precisa, com a Tranquilidade que <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-goldBright via-brand-gold to-amber-300">Você Merece</span>
+            </h1>
+
+            <!-- SUBTÍTULO -->
+            <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Consultas, vacinas, exames laboratoriais, cirurgias, internação e atendimento personalizado para cães e gatos.
+            </p>
+
+            <!-- BOTÃO DE AÇÃO PRINCIPAL -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="https://wa.me/553190911515" target="_blank" rel="noopener noreferrer" 
+                 class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-whatsapp to-brand-whatsappHover hover:brightness-110 text-white font-black text-base sm:text-lg px-8 py-4 rounded-2xl shadow-glow-green hover:shadow-2xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group">
+                <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+                <span>FALAR COM VETERINÁRIO AGORA</span>
+                <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+
+            <!-- SELOS DE CONFIANÇA EM CARDS AZUIS -->
+            <div class="pt-4 grid grid-cols-2 gap-3 text-left max-w-md mx-auto lg:mx-0">
+              <div class="flex items-center gap-2.5 p-3 rounded-xl bg-brand-card/80 border border-brand-cardBorder text-slate-200 shadow-sm">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+                  <i class="fa-solid fa-user-doctor text-sm"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-200">Equipe Qualificada</span>
+              </div>
+
+              <div class="flex items-center gap-2.5 p-3 rounded-xl bg-brand-card/80 border border-brand-cardBorder text-slate-200 shadow-sm">
+                <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 font-bold">
+                  <i class="fa-solid fa-credit-card text-sm"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-200">Plano Petlove Aceito</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: HERO IMAGE & BADGE -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Card Image Frame com borda azul e dourada -->
+              <div class="relative rounded-3xl overflow-hidden shadow-glow-blue border-2 border-brand-cardBorder p-1.5 bg-brand-card">
+                <div class="rounded-2xl overflow-hidden relative">
+                  <img src="hero_vet_clinic.jpg" alt="Veterinários atendendo pet na Center Vet Camargos" class="w-full h-[360px] sm:h-[440px] object-cover hover:scale-105 transition-transform duration-700">
+                  
+                  <!-- Gradient Overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+
+                  <!-- Floating Caption inside Image -->
+                  <div class="absolute bottom-4 left-4 right-4 text-white">
+                    <div class="bg-brand-dark/90 backdrop-blur-md rounded-2xl p-4 border border-brand-gold/30 shadow-xl">
+                      <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold flex items-center justify-center text-brand-dark font-bold text-lg">
+                          <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <div>
+                          <p class="text-sm font-bold text-white">Estrutura Completa para Cães & Gatos</p>
+                          <p class="text-xs text-slate-300">Consultas, cirurgias, vacinas e internação</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Petlove Pill Badge ESTILO POST INSTAGRAM -->
+              <div class="absolute -top-4 -right-2 sm:-right-4 bg-white text-slate-900 rounded-2xl p-3 sm:p-4 shadow-2xl border-2 border-brand-gold flex items-center gap-3 animate-pulse">
+                <div class="w-10 h-10 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-bold">
+                  <i class="fa-solid fa-heart text-lg"></i>
+                </div>
+                <div>
+                  <span class="block text-[10px] font-black uppercase tracking-wider text-slate-500">Parceria Oficial</span>
+                  <span class="text-xs sm:text-sm font-black text-brand-navy">Plano Petlove Aceito</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SEÇÃO 2: GRID DE SERVIÇOS RÁPIDOS
+         ========================================== -->
+    <section id="servicos" class="py-16 sm:py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- SECTION TITLE HEADER -->
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span class="text-xs sm:text-sm font-black uppercase tracking-widest text-brand-gold bg-brand-card border border-brand-gold/30 px-4 py-1.5 rounded-full inline-block mb-3">
+            Nossos Serviços Exclusivos
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+            Nossos Serviços Veterinários
+          </h2>
+          <p class="mt-3 text-slate-300 text-base sm:text-lg">
+            Tudo o que seu melhor amigo precisa para viver com saúde, bem-estar e segurança em um só lugar.
+          </p>
+        </div>
+
+        <!-- 6 COMPACT CARDS GRID STRICTLY MATCHING THE 6 VET SERVICES -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- CARD 1: Consultas -->
+          <div class="bg-brand-card/90 rounded-2xl p-6 sm:p-8 border border-brand-cardBorder shadow-lg hover:border-emerald-500/60 hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300 shadow-inner">
+                🩺
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+                Consultas
+              </h3>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Atendimento clínico geral e diagnóstico especializado para acompanhamento contínuo da saúde do seu cão ou gato.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-cardBorder/60 flex items-center justify-between text-xs font-bold text-emerald-400">
+              <span>Atendimento Geral</span>
+              <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- CARD 2: Vacinas -->
+          <div class="bg-brand-card/90 rounded-2xl p-6 sm:p-8 border border-brand-cardBorder shadow-lg hover:border-brand-gold/60 hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-amber-950/80 border border-brand-gold/30 text-brand-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-dark transition-colors duration-300 shadow-inner">
+                💉
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition-colors">
+                Vacinas
+              </h3>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Imunização preventiva completa com vacinas essenciais como V10, Gripe e Raiva para manter a proteção em dia.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-cardBorder/60 flex items-center justify-between text-xs font-bold text-brand-gold">
+              <span>Prevenção Essencial</span>
+              <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- CARD 3: Exames Laboratoriais -->
+          <div class="bg-brand-card/90 rounded-2xl p-6 sm:p-8 border border-brand-cardBorder shadow-lg hover:border-cyan-500/60 hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300 shadow-inner">
+                🧪
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Exames Laboratoriais
+              </h3>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Exames de sangue, urina, fezes e testes de diagnóstico veterinário com rapidez e exatidão para os cuidados do seu pet.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-cardBorder/60 flex items-center justify-between text-xs font-bold text-cyan-400">
+              <span>Diagnóstico Preciso</span>
+              <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- CARD 4: Cirurgias -->
+          <div class="bg-brand-card/90 rounded-2xl p-6 sm:p-8 border border-brand-cardBorder shadow-lg hover:border-purple-500/60 hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-purple-950/80 border border-purple-500/30 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 shadow-inner">
+                ✂️
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                Cirurgias
+              </h3>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Procedimentos cirúrgicos realizados em bloco cirúrgico estruturado com total segurança e cuidado.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-cardBorder/60 flex items-center justify-between text-xs font-bold text-purple-400">
+              <span>Máxima Segurança</span>
+              <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- CARD 5: Internação -->
+          <div class="bg-brand-card/90 rounded-2xl p-6 sm:p-8 border border-brand-cardBorder shadow-lg hover:border-red-500/60 hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-red-950/80 border border-red-500/30 text-red-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300 shadow-inner">
+                🏥
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-red-400 transition-colors">
+                Internação
+              </h3>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Suporte intensivo e monitoramento constante para os pets que necessitam de cuidados e recuperação hospitalar.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-cardBorder/60 flex items-center justify-between text-xs font-bold text-red-400">
+              <span>Monitoramento Intensivo</span>
+              <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- CARD 6: Atendimento Personalizado -->
+          <div class="bg-brand-card/90 rounded-2xl p-6 sm:p-8 border border-brand-cardBorder shadow-lg hover:border-blue-500/60 hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-blue-950/80 border border-blue-500/30 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-inner">
+                🪪
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Atendimento Personalizado
+              </h3>
+              <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                Atenção dedicada, carinho e respeito às particularidades do seu cão ou gato em cada momento de atendimento.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-cardBorder/60 flex items-center justify-between text-xs font-bold text-blue-400">
+              <span>Cuidado Individualizado</span>
+              <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- HIGHLIGHT PETLOVE BANNER -->
+        <div class="mt-12 bg-gradient-to-r from-brand-card via-brand-navy to-brand-card rounded-3xl p-6 sm:p-8 text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 border-2 border-brand-gold/40">
+          <div class="flex items-center gap-5 text-center md:text-left">
+            <div class="w-14 h-14 rounded-2xl bg-brand-gold text-brand-dark flex items-center justify-center text-3xl shrink-0 shadow-glow-gold">
+              💳
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-black text-white">
+                Aceitamos o Plano de Saúde Petlove!
+              </h3>
+              <p class="text-sm sm:text-base text-slate-300 mt-1">
+                Utilize seu plano para consultas, vacinas e exames na Center Vet Camargos sem complicação.
+              </p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/553190911515" target="_blank" rel="noopener noreferrer"
+             class="shrink-0 bg-brand-gold hover:bg-brand-goldHover text-brand-dark font-black text-sm sm:text-base px-6 py-3.5 rounded-xl shadow-glow-gold transition-all duration-200 flex items-center gap-2">
+            <span>CONSULTAR COBERTURA</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SEÇÃO 3: FOOTER & CTA DE CONTATO
+         ========================================== -->
+    <footer class="bg-brand-dark text-white relative overflow-hidden border-t border-brand-cardBorder">
+      
+      <!-- MAIN CTA FOOTER BLOCK -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
+        
+        <div class="bg-gradient-to-br from-brand-navy via-brand-card to-brand-dark border-2 border-brand-gold/40 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden mb-16 shadow-2xl">
+          <div class="max-w-3xl mx-auto space-y-6 relative z-10">
+            
+            <div class="w-16 h-16 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center text-3xl mx-auto mb-2 border border-brand-gold/40 shadow-glow-gold">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight">
+              Precisa agendar uma consulta ou vacina para o seu pet?
+            </h2>
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto">
+              Fale diretamente com nossa equipe no WhatsApp. Resposta rápida para tirar suas dúvidas e agendar o atendimento do seu cão ou gato.
+            </p>
+
+            <div class="pt-2">
+              <a href="https://wa.me/553190911515" target="_blank" rel="noopener noreferrer" 
+                 class="inline-flex items-center gap-3 bg-brand-gold hover:bg-brand-goldHover text-brand-dark font-black text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-2xl shadow-glow-gold hover:scale-105 active:scale-95 transition-all duration-200 uppercase tracking-wide">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>AGENDAR NO WHATSAPP</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FOOTER INFO GRID WITH GOOGLE MAPS -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-t border-brand-cardBorder/80 text-slate-300">
+          
+          <!-- CLINIC BRAND -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-gold flex items-center justify-center text-brand-dark font-bold text-xl">
+                <i class="fa-solid fa-paw"></i>
+              </div>
+              <span class="text-xl font-black text-white">Center Vet Camargos</span>
+            </div>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Medicina veterinária dedicada com amor, tecnologia e responsabilidade para o bem-estar do seu pet.
+            </p>
+          </div>
+
+          <!-- LOCATION, HOURS & EMBEDDED GOOGLE MAP -->
+          <div class="space-y-3">
+            <h4 class="text-base font-bold text-white uppercase tracking-wider text-xs">Atendimento & Localização</h4>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-location-dot text-brand-gold mt-1"></i>
+                <span>Bairro Camargos, Belo Horizonte - MG</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-clock text-brand-gold mt-1"></i>
+                <span>Atendimento Veterinário e Emergência</span>
+              </li>
+            </ul>
+            
+            <!-- MINI MAPA INTERATIVO DO GOOGLE MAPS -->
+            <div class="pt-2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.582705924027!2d-44.0154845!3d-19.941982199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697ea5683593d%3A0x510689a869a3c260!2sCenter%20Vet%20Camargos%20Cl%C3%ADnica%20Veterin%C3%A1ria!5e0!3m2!1spt-BR!2sbr!4v1790706845001!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="w-full h-48 rounded-xl border border-brand-cardBorder shadow-lg"></iframe>
+            </div>
+          </div>
+
+          <!-- DIRECT CONTACT & PETLOVE -->
+          <div class="space-y-3">
+            <h4 class="text-base font-bold text-white uppercase tracking-wider text-xs">Contato Direto</h4>
+            <div class="space-y-2 text-sm">
+              <a href="https://wa.me/553190911515" target="_blank" class="flex items-center gap-2.5 text-emerald-400 hover:underline font-bold text-base">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>+55 (31) 9091-1515</span>
+              </a>
+              <p class="text-xs text-slate-400">
+                💳 Aceitamos cartões e Plano de Saúde Petlove.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COPYRIGHT FOOTER BOTTOM -->
+        <div class="pt-8 border-t border-brand-cardBorder/60 text-center text-xs text-slate-500">
+          <p>© Center Vet Camargos Clínica Veterinária. Todos os direitos reservados.</p>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON
+       ========================================== -->
+  <a href="https://wa.me/553190911515" target="_blank" rel="noopener noreferrer"
+     aria-label="Fale conosco no WhatsApp"
+     class="fixed bottom-6 right-6 z-50 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl pulse-whatsapp transition-transform hover:scale-110">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
